@@ -48,45 +48,8 @@ export const FarmerTable = () => {
   const stateInfo = data
     .map((item) => item.state)
     .filter((item, index, self) => {
-      return self.indexOf(item) == index;
+      return self.indexOf(item) === index;
     });
-
-  const firstSearchItem = search.trim().split(",")[0]
-    ? search.trim().split(",")[0]
-    : "";
-  const secondSearchItem = search.trim().split(",")[1]
-    ? search.trim().split(",")[1]
-    : "";
-
-  const nameSearch = (array: FarmerInfoType[]) => {
-    return array.filter((item) => {
-      return item.farmer_name.trim().toLowerCase().includes(firstSearchItem);
-    });
-  };
-
-  const citySearch = (array: FarmerInfoType[]) => {
-    return array.filter((item) => {
-      return item.city.trim().toLowerCase().includes(secondSearchItem);
-    });
-  };
-
-  const statesSearch = (array: FarmerInfoType[]) => {
-    return array.filter((item) => {
-      return item.state.toLowerCase().includes(states.toLowerCase());
-    });
-  };
-
-  const cropSearch = (array: FarmerInfoType[]) => {
-    return array.filter((item) => {
-      return item.cp_spend > 0;
-    });
-  };
-
-  const seedSearch = (array: FarmerInfoType[]) => {
-    return array.filter((item) => {
-      return item.seed_purchases > 0;
-    });
-  };
 
   const handleCrop = () => {
     setCrop(!crop);
@@ -97,6 +60,42 @@ export const FarmerTable = () => {
   };
 
   useEffect(() => {
+    const firstSearchItem = search.trim().split(",")[0]
+      ? search.trim().split(",")[0]
+      : "";
+    const secondSearchItem = search.trim().split(",")[1]
+      ? search.trim().split(",")[1]
+      : "";
+
+    const nameSearch = (array: FarmerInfoType[]) => {
+      return array.filter((item) => {
+        return item.farmer_name.trim().toLowerCase().includes(firstSearchItem);
+      });
+    };
+
+    const citySearch = (array: FarmerInfoType[]) => {
+      return array.filter((item) => {
+        return item.city.trim().toLowerCase().includes(secondSearchItem);
+      });
+    };
+
+    const statesSearch = (array: FarmerInfoType[]) => {
+      return array.filter((item) => {
+        return item.state.toLowerCase().includes(states.toLowerCase());
+      });
+    };
+
+    const cropSearch = (array: FarmerInfoType[]) => {
+      return array.filter((item) => {
+        return item.cp_spend > 0;
+      });
+    };
+
+    const seedSearch = (array: FarmerInfoType[]) => {
+      return array.filter((item) => {
+        return item.seed_purchases > 0;
+      });
+    };
     let result = data;
     if (firstSearchItem.length > 0) result = nameSearch(result);
     if (secondSearchItem.length > 0) result = citySearch(result);
@@ -155,5 +154,3 @@ export const FarmerTable = () => {
     </>
   );
 };
-
-const FarmetTableUI = () => {}
