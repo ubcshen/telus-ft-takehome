@@ -59,6 +59,7 @@ export const FarmerTable = () => {
     setSeed(!seed);
   };
 
+  /* search by name and city, just checking if include the char or not */
   useEffect(() => {
     const firstSearchItem = search.trim().split(",")[0]
       ? search.trim().split(",")[0]

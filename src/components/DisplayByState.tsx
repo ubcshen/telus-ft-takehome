@@ -12,10 +12,11 @@ export const DisplayByState = (props: Props) => {
     props.setStates(e.target.value);
   };
 
+  /* if select first option then return all state data */
   return (
     <div className={styles.displayByStates}>
       <select onChange={handleChange} value={props.states ? props.states : ""}>
-        <option key="PlaceHolder" value="" disabled>
+        <option key="PlaceHolder" value="">
           State
         </option>
         {props.hasStates.map((item) => {
