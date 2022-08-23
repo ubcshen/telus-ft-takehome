@@ -1,0 +1,13 @@
+.farmerTableListTH {
+  background-color: #fff;
+  border-bottom: 1px solid rgb(157, 155, 155);
+  display: grid;
+  grid-template-columns: 1.5fr 0.75fr 1fr 1.25fr 1fr;
+  padding: 10px 40px;
+  text-align: left;
+  grid-gap: 50px;
+}
+
+.alignRight {
+  text-align: right;
+}

@@ -1,0 +1,61 @@
+.farmerTableTH {
+  background-color: #fff;
+  border-bottom: 1px solid rgb(157, 155, 155);
+  display: grid;
+  grid-template-columns: 1.5fr 0.75fr 1fr 1.25fr 1fr;
+  padding: 10px 40px;
+  text-align: left;
+  font-weight: 700;
+  grid-gap: 50px;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.farmerTable {
+  border: 1px solid #A7ADB1;
+}
+
+.farmerTableResults {
+  text-align: left;
+  margin: 20px 0;
+}
+
+.sortable:hover {
+  cursor: pointer;
+}
+
+.arrowDown {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2px;
+  transform: rotate(45deg);
+  transition: .4s;
+  margin-bottom: 3px;
+}
+
+.sortable:hover .arrowDown {
+  transform: rotate(-135deg);
+  transition: .4s;
+}
+
+.sortAndSearch {
+  display: grid;
+  grid-template-columns: repeat(4, 180px);
+  text-align: left;
+}
+
+select {
+  width: 70%;
+}
+
+label input {
+  vertical-align: top;
+}
+
+label span {
+  width: calc(100% - 20px);
+  display: inline-block;
+}

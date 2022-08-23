@@ -1,0 +1,74 @@
+{
+  "data": [
+    { 
+      "city": "Renton",
+      "cp_spend": 8254522,
+      "farmer_name": "Birch Farms",
+      "seed_purchases": 40,
+      "state": "WA"
+    },
+    { 
+      "city": "Greenfield",
+      "cp_spend": 94929,
+      "farmer_name": "Boulder Valley Group",
+      "seed_purchases": 47,
+      "state": "WI"
+    },
+    { 
+      "city": "Fairfield",
+      "cp_spend": 74929,
+      "farmer_name": "Cliffwood Farms",
+      "seed_purchases": 56,
+      "state": "OH"
+    },
+    { 
+      "city": "Hollister",
+      "cp_spend": 20000,
+      "farmer_name": "Daniel Whitmore Group",
+      "seed_purchases": 10,
+      "state": "OK"
+    },
+    { 
+      "city": "New Munster",
+      "cp_spend": 1500,
+      "farmer_name": "Dwyer Farms",
+      "seed_purchases": 87,
+      "state": "WI"
+    },
+    { 
+      "city": "Sciotodale",
+      "cp_spend": 908.16,
+      "farmer_name": "Gittmore Group",
+      "seed_purchases": 33,
+      "state": "OH"
+    },
+    { 
+      "city": "Clymer",
+      "cp_spend": 6703.11,
+      "farmer_name": "Granger Farm",
+      "seed_purchases": 41,
+      "state": "PA"
+    },
+    { 
+      "city": "Wabash",
+      "cp_spend": 0,
+      "farmer_name": "James Farm Inc. Group",
+      "seed_purchases": 61,
+      "state": "OH"
+    },
+    { 
+      "city": "Olney",
+      "cp_spend": 0,
+      "farmer_name": "Matt Truscott Group",
+      "seed_purchases": 89,
+      "state": "IL"
+    },
+    { 
+      "city": "Edmonds",
+      "cp_spend": 0,
+      "farmer_name": "Upton Farm",
+      "seed_purchases": 0,
+      "state": "ID"
+    }
+  ]
+}
